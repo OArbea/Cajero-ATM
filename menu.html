@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Bienvenido <span id="nombreUsuario"></span></h1>
+    <div>
+        <h2>Operaciones Disponibles:</h2>
+        <button onclick="consultarSaldo()">Consultar Saldo</button>
+        <button onclick="agregarSaldo()">Agregar Saldo</button>
+        <button onclick="retirarSaldo()">Retirar Saldo</button>
+        <button onclick="cambiarNIP()">Cambiar NIP</button>
+        <button onclick="consultarNIP()">Consultar NIP</button>
+        <button onclick="salir()">Terminar</button>
+    </div>
+
+    <div id="resultado" style="display: none;"></div>
+
+    <script src="datos.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>

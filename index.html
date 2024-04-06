@@ -1,0 +1,41 @@
+<!-- Crear cajero automatico:
+*debe de incluir almenos 3 personas
+*se puede hacer con un arreglo
+*no mas de 990 y menos de 10
+*consultar ingresar y retirar
+*mostrar saldo
+*usar sumit
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--TITULO -->
+    <title>Login Cajero</title>
+    <!-- Referencia a los estylos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Bienvenido</h1>
+    <form id="loginForm" onsubmit="validarUsuario(); return false;">
+
+     <!-- botones -->   
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" placeholder="Ingrese su usuario" required><br><br>
+        <label for="nip">NIP:</label>
+        <input type="password" id="nip" placeholder="Ingrese su NIP" required><br><br>
+        <!--usuarios creados en el archivo datos.js 
+        *usuario contraseña 
+        1234-5678
+        1111-1111
+        2222-2222
+        -->
+        <!-- Funcion de SUMIT -->
+        <button type="submit">Ingresar</button>
+    </form>
+    <!-- funciones -->
+    <script src="datos.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
